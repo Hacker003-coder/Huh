@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Computer Shop in Bhavnagar offers used and custom PCs, laptop upgrades, repairs, and accessories with trusted local support."
+    />
+    <title>The Computer Shop | Bhavnagar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="navbar container">
+        <a class="brand" href="#home" aria-label="The Computer Shop home">
+          <span class="brand-badge" aria-hidden="true">TCS</span>
+          <span>
+            <strong>The Computer Shop</strong>
+            <small>થે કમ્પ્યૂટર શોપ</small>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-content container">
+        <div>
+          <p class="eyebrow">4.9 ★ Rated • 115+ Reviews</p>
+          <h1>Your Trusted Computer Store in Bhavnagar</h1>
+          <p class="lead">
+            Buy quality used computers, build custom PCs, upgrade laptops, and get fast,
+            genuine repairs with friendly expert support.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+919825212018">Call Now: 098252 12018</a>
+            <a
+              class="btn btn-secondary"
+              href="https://maps.google.com/?q=Q44G+V7+Bhavnagar,+Gujarat"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Get Directions</a
+            >
+          </div>
+          <div class="status-bar" id="store-status" aria-live="polite"></div>
+        </div>
+        <div class="hero-image-card">
+          <img
+            src="assets/hero-workstation.svg"
+            alt="Modern computer workstation with desktop setup"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="services">
+        <h2>Services & Products</h2>
+        <p class="section-copy">
+          Complete solutions for students, professionals, businesses, and creators.
+        </p>
+        <div class="grid service-grid">
+          <article class="card">
+            <h3>Used & Refurbished Computers</h3>
+            <p>Carefully checked desktops and laptops at reasonable prices.</p>
+          </article>
+          <article class="card">
+            <h3>Custom PC Builds</h3>
+            <p>Professional builds for development, video editing, gaming, and office work.</p>
+          </article>
+          <article class="card">
+            <h3>Laptop & Desktop Repair</h3>
+            <p>Quick diagnosis, genuine parts, and reliable repairs with clear support.</p>
+          </article>
+          <article class="card">
+            <h3>Upgrades & Accessories</h3>
+            <p>RAM, SSD, GPU, keyboards, and all everyday computer essentials.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="gallery">
+        <div class="container">
+          <h2>Inside The Computer Shop</h2>
+          <div class="grid image-grid">
+            <img
+              src="assets/gallery-hardware.svg"
+              alt="Computer hardware and components display"
+              loading="lazy"
+            />
+            <img
+              src="assets/gallery-repair.svg"
+              alt="Laptop repair and diagnostics workspace"
+              loading="lazy"
+            />
+            <img
+              src="assets/gallery-desktop.svg"
+              alt="Custom desktop computer setup"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="reviews">
+        <h2>What Customers Say</h2>
+        <div class="grid review-grid">
+          <blockquote class="card review-card">
+            <p>
+              “Reasonable price, quick response, supportive staff and good service.”
+            </p>
+            <cite>— Local Customer Review</cite>
+          </blockquote>
+          <blockquote class="card review-card">
+            <p>
+              “I purchased a custom PC for development and editing. I am very happy with
+              the quality and consultation.”
+            </p>
+            <cite>— Keyur Patel</cite>
+          </blockquote>
+          <blockquote class="card review-card">
+            <p>
+              “My laptop was not turning on. They repaired it quickly and now it works
+              perfectly. Highly recommended.”
+            </p>
+            <cite>— Janak Solanki</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container contact-wrap">
+          <div>
+            <h2>Visit The Computer Shop</h2>
+            <ul class="contact-list">
+              <li><strong>Address:</strong> Jewels Cir, Vijayrajnagar, Bhavnagar, Gujarat 364003</li>
+              <li><strong>Phone:</strong> <a href="tel:+919825212018">098252 12018</a></li>
+              <li><strong>Open:</strong> Monday to Sunday • 10:00 AM – 8:00 PM</li>
+              <li><strong>Services:</strong> In-store shopping and delivery available</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+919825212018">Call for Instant Support</a>
+              <a
+                class="btn btn-secondary"
+                href="https://maps.google.com/?q=Jewels+Cir,+Vijayrajnagar,+Bhavnagar,+Gujarat+364003"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open in Google Maps</a
+              >
+            </div>
+          </div>
+          <div class="location-card">
+            <img src="assets/location-map.svg" alt="Map preview for The Computer Shop location" loading="lazy" />
+            <p>
+              Located near Jewels Circle in Vijayrajnagar, Bhavnagar. Tap “Open in Google
+              Maps” for turn-by-turn navigation.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © <span id="year"></span> The Computer Shop, Bhavnagar. Best service, genuine work,
+          and trusted support.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
