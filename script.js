@@ -22,7 +22,10 @@ if (form) {
     ];
 
     const text = encodeURIComponent(lines.join("\n"));
-    const whatsappUrl = `https://wa.me/919825212018?text=${text}`;
+    if (!form.action) {
+      return;
+    }
+    const whatsappUrl = `${form.action}?text=${text}`;
     window.open(whatsappUrl, "_blank");
     form.reset();
   });
