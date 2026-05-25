@@ -318,7 +318,12 @@
               </div>
             </div>
           </div>
-          <form class="form-card" action="#" method="post">
+          <form
+            class="form-card"
+            id="contact-form"
+            action="https://wa.me/919825212018"
+            method="get"
+          >
             <h3>Quick enquiry</h3>
             <div class="field">
               <label for="name">Full name</label>
@@ -337,7 +342,7 @@
             <div class="field">
               <label for="service">Service needed</label>
               <select id="service" name="service" required>
-                <option value="">Select a service</option>
+                <option value="" disabled selected>Select a service</option>
                 <option>Custom PC build</option>
                 <option>Laptop repair</option>
                 <option>Desktop upgrade</option>
@@ -357,7 +362,7 @@
             </div>
             <button class="btn btn-primary full" type="submit">Send Request</button>
             <p class="form-note">
-              This form is for quick messages. We reply by call or WhatsApp.
+              Submitting opens WhatsApp with your details for a fast response.
             </p>
           </form>
         </div>
