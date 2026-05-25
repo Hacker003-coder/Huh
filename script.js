@@ -15,7 +15,7 @@ if (form) {
     const message = String(data.get("message") || "").trim();
 
     const lines = [
-      "New enquiry from The Computer Shop website:",
+      "New inquiry from The Computer Shop website:",
       `Name: ${name}`,
       `Phone: ${phone}`,
       `Service: ${service}`,
@@ -23,15 +23,6 @@ if (form) {
     ];
 
     const text = encodeURIComponent(lines.join("\n"));
-    if (!form.action) {
-      if (status) {
-        status.textContent =
-          "WhatsApp link is not configured. Please call us for assistance.";
-        status.dataset.state = "error";
-      }
-      console.warn("Contact form action is missing.");
-      return;
-    }
     const whatsappUrl = `${form.action}?text=${text}`;
     window.open(whatsappUrl, "_blank");
     form.reset();

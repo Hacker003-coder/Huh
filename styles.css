@@ -162,6 +162,18 @@ img {
   font-size: 0.85rem;
 }
 
+.badge-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.badge-light {
+  background: rgba(15, 23, 42, 0.06);
+  color: var(--secondary);
+}
+
 .hero-cta {
   display: flex;
   gap: 14px;
