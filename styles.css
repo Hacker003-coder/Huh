@@ -430,9 +430,12 @@ img {
   gap: 16px;
 }
 
-label {
+.field {
   display: grid;
   gap: 8px;
+}
+
+label {
   font-weight: 600;
   color: var(--secondary);
 }

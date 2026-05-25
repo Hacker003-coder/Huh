@@ -318,30 +318,43 @@
               </div>
             </div>
           </div>
-          <form class="form-card">
+          <form class="form-card" action="#" method="post">
             <h3>Quick enquiry</h3>
-            <label>
-              Full name
-              <input type="text" name="name" placeholder="Your name" />
-            </label>
-            <label>
-              Phone number
-              <input type="tel" name="phone" placeholder="Your number" />
-            </label>
-            <label>
-              Service needed
-              <select name="service">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" type="text" name="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="Your number"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="service">Service needed</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
                 <option>Custom PC build</option>
                 <option>Laptop repair</option>
                 <option>Desktop upgrade</option>
                 <option>Business support</option>
                 <option>Accessories</option>
               </select>
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="4" placeholder="Tell us what you need"></textarea>
-            </label>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell us what you need"
+                required
+              ></textarea>
+            </div>
             <button class="btn btn-primary full" type="submit">Send Request</button>
             <p class="form-note">
               This form is for quick messages. We reply by call or WhatsApp.
