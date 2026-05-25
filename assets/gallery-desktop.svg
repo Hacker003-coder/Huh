@@ -1,0 +1,13 @@
+<svg width="800" height="550" viewBox="0 0 800 550" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="desktopTitle desktopDesc">
+  <title id="desktopTitle">Custom desktop setup</title>
+  <desc id="desktopDesc">Illustration of a custom desktop computer and monitor.</desc>
+  <rect width="800" height="550" rx="26" fill="#EDF2FF"/>
+  <rect x="120" y="120" width="470" height="270" rx="20" fill="#12182D"/>
+  <rect x="152" y="154" width="406" height="202" rx="14" fill="#22356E"/>
+  <rect x="298" y="390" width="114" height="30" rx="15" fill="#12182D"/>
+  <rect x="252" y="420" width="206" height="18" rx="9" fill="#22356E"/>
+  <rect x="620" y="122" width="100" height="286" rx="16" fill="#1A274F"/>
+  <circle cx="670" cy="186" r="20" fill="#4CC9F0"/>
+  <circle cx="670" cy="252" r="20" fill="#4CC9F0"/>
+  <circle cx="670" cy="318" r="20" fill="#4CC9F0"/>
+</svg>
