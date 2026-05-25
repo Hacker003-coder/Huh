@@ -454,6 +454,14 @@ select {
   color: var(--muted);
 }
 
+.form-note[data-state="error"] {
+  color: #b91c1c;
+}
+
+.form-note[data-state="success"] {
+  color: var(--primary);
+}
+
 .site-footer {
   background: var(--secondary);
   color: var(--white);

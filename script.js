@@ -5,6 +5,7 @@ if (yearEl) {
 
 const form = document.getElementById("contact-form");
 if (form) {
+  const status = form.querySelector("[data-form-status]");
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const data = new FormData(form);
@@ -23,10 +24,20 @@ if (form) {
 
     const text = encodeURIComponent(lines.join("\n"));
     if (!form.action) {
+      if (status) {
+        status.textContent =
+          "WhatsApp link is not configured. Please call us for assistance.";
+        status.dataset.state = "error";
+      }
+      console.warn("Contact form action is missing.");
       return;
     }
     const whatsappUrl = `${form.action}?text=${text}`;
     window.open(whatsappUrl, "_blank");
     form.reset();
+    if (status) {
+      status.textContent = "Opening WhatsApp with your details...";
+      status.dataset.state = "success";
+    }
   });
 }
